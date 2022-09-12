@@ -235,7 +235,9 @@ body {
   list-style: none;
 }
 .developer .card-title {
-		background-color: #8d3737;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #8d3737;
 }
 .developer .title {
 	margin: 0 auto;
