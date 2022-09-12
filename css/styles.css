@@ -33,8 +33,26 @@ body {
 
 /* Header navigation */
 
+.container {
+	margin: 0 auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.nav {
+	display: flex;
+	align-items: center;
+}
 .nav .list {
+	display: flex;
+	margin-left: 93px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
   list-style: none;
+}
+.nav .item:not(:last-child) {
+	margin-right: 50px;
 }
 .nav .link:hover {
   color: var(--accent-color);
@@ -43,6 +61,9 @@ body {
   color: var(--accent-color);
 }
 .nav .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -53,12 +74,23 @@ body {
   color: var(--accent-color);
 }
 .auth {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-left: 0;
+	display: flex;
   list-style: none;
 }
+.auth .item:not(:last-child) {
+	margin-right: 50px;
+}
 .auth .link {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 14px;	
   line-height: 1.33;
   color: var(--secondary-text-color);
 }
@@ -66,9 +98,20 @@ body {
 /* Section Hero */
 
 .hero {
+	padding: 200px 0;
+	text-align: center;
   background-color: var(--background);
 }
+.hero .container {
+	margin: 0 auto;
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .hero .title {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	max-width: 650px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -76,12 +119,17 @@ body {
   color: var(--white-color);
 }
 .hero .button {
+	padding: 10px 32px;
+	display: block;
+	margin: 0 auto;
   background-color: var(--accent-color);
   color: var(--white-color);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
 }
 .hero .button:hover {
   background-color: #188ce8;
@@ -89,15 +137,45 @@ body {
 
 /* Section Skill */
 
+.skill {
+	padding: 94px 0;
+}
+.padding-bottom {
+	padding-bottom: 0;
+}
+.skill .container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.skill .title-hidden {
+	overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		clip: rect(0 0 0 0);
+		clip-path: inset(50%);
+		height: 1px;
+		width: 1px;
+}
 .skill .list {
+	display: flex;
+	margin: 0 auto;
+	padding-left: 0;
   list-style: none;
 }
+.skill .item:not(:last-child) {
+	margin-right: 30px;
+}
 .skill .title {
+	margin: 0 auto;
+	margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
 }
 .skill .text {
+	margin: 0 auto;
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
@@ -105,36 +183,68 @@ body {
 
 /* Section Services */
 
-.service .list {
-  list-style: none;
+.service {
+	padding: 94px 0;
+}
+.service .container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
 }
 .service .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+}
+.service .list {
+	display: flex;
+	gap: 30px;
+	margin: 0 auto;
+	padding-left: 0;
+  list-style: none;
 }
 
 /* Section Developer */
 
 .developer {
+	padding: 94px 0;
   background-color: #f5f4fa;
 }
+.developer .container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.developer .title-dev {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+}
 .developer .list {
+	display: flex;
+	margin: 0 auto;
+	padding-left: 0;
+	gap: 30px;
   list-style: none;
 }
-.developer .title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+.developer .card-title {
+		background-color: #8d3737;
 }
-.developer .list-title {
+.developer .title {
+	margin: 0 auto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 .developer .text {
+	margin: 0 auto;
   font-size: 16px;
   line-height: 1.18;
   color: var(--secondary-text-color);
